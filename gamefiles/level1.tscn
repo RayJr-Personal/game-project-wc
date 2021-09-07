@@ -40,33 +40,18 @@ shape = SubResource( 1 )
 position = Vector2( 0, 78 )
 curve = SubResource( 2 )
 
-[node name="PathFollow2D" type="PathFollow2D" parent="Lane1"]
-position = Vector2( -136.58, 158.37 )
-
 [node name="Lane2" type="Path2D" parent="."]
 position = Vector2( 0, 156 )
 curve = SubResource( 2 )
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Lane2"]
-position = Vector2( -136.58, 158.37 )
 
 [node name="Lane3" type="Path2D" parent="."]
 position = Vector2( 0, 234 )
 curve = SubResource( 2 )
 
-[node name="PathFollow2D" type="PathFollow2D" parent="Lane3"]
-position = Vector2( -136.58, 158.37 )
-
 [node name="Lane4" type="Path2D" parent="."]
 position = Vector2( 0, 320 )
 curve = SubResource( 2 )
 
-[node name="PathFollow2D" type="PathFollow2D" parent="Lane4"]
-position = Vector2( -136.58, 158.37 )
-
 [node name="Lane5" type="Path2D" parent="."]
 position = Vector2( 0, 405 )
 curve = SubResource( 2 )
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Lane5"]
-position = Vector2( -136.58, 158.37 )

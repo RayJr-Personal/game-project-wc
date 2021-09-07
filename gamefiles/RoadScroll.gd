@@ -12,7 +12,7 @@ func _ready():
 	roadPosition = get_offset()
 
 func _process(delta):
-	speed_multiplier = 0.5 
+	speed_multiplier = 0.75 
 	if (Input.is_action_pressed("speed_up")):
 		speed_multiplier = speed_multiplier * boost
 	roadPosition.x -= (SCROLL_SPEED * speed_multiplier)
