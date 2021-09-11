@@ -11,7 +11,11 @@ var car5 = preload("res://resources/cars/spr_silvercar_0.png")
 var car6 = preload("res://resources/cars/spr_van_0.png")
 
 var cars = [car1, car2, car3, car4, car5, car6]
+var lane_nums = [0, 1, 2, 3, 4]
 
+# Adds a car into the current scene. A random sprite is given to the car.
+# There is also a 0.75 second delay between spawning cars.
+# MUST ADD FEATURE HERE THAT PREVENTS SPAWNING A CAR INTO ANOTHER CAR
 func add_car():
 	for i in range(0, CAR_COUNT):
 		
@@ -23,19 +27,30 @@ func add_car():
 		var ci = Car.instance()
 		ci.add_child(cs)
 		
+		add_child(ci)
+		
+		# delay
 		var timer = Timer.new()
 		timer.set_wait_time(0.75)
 		timer.set_one_shot(true)
 		self.add_child(timer)
 		timer.start()
 		yield(timer, "timeout")
-		
-		var path_follow = PathFollow2D.new()
-		path_follow.add_child(ci)
-		
-		var lane_number = str(randi() % 5 + 1)
-		var parent = get_node("Lane" + lane_number)
-		parent.add_child(path_follow)
+
+func _on_car_spawned(lane_num):
+	lane_nums.erase(lane_num)
+	print(lane_nums)
+	
+	var timer = Timer.new()
+	timer.connect("timeout", self, "re_add_lane_num", [lane_num])
+	timer.set_wait_time(1)
+	timer.set_one_shot(true)
+	self.add_child(timer)
+	timer.start()
+
+func re_add_lane_num(lane_num):
+	lane_nums.append(lane_num)
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
