@@ -13,9 +13,15 @@ _global_script_classes=[ {
 "class": "Car",
 "language": "GDScript",
 "path": "res://car.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Effect",
+"language": "GDScript",
+"path": "res://scenes/effect.gd"
 } ]
 _global_script_class_icons={
-"Car": ""
+"Car": "",
+"Effect": ""
 }
 
 [application]
