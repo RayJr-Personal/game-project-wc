@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Background_City_Skyline(Gimp_2-8).png-61ef1b4c344915bb500e013c0518a40b.stex"
+path="res://.import/Background_City_Skyline(Gimp_2-8)_Original.png-e4b15b64adf282df0930b6944cce2482.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/bg/Background_City_Skyline(Gimp_2-8).png"
-dest_files=[ "res://.import/Background_City_Skyline(Gimp_2-8).png-61ef1b4c344915bb500e013c0518a40b.stex" ]
+source_file="res://resources/bg/Background_City_Skyline(Gimp_2-8)_Original.png"
+dest_files=[ "res://.import/Background_City_Skyline(Gimp_2-8)_Original.png-e4b15b64adf282df0930b6944cce2482.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false

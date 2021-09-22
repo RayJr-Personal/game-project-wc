@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "KinematicBody2D",
 "class": "Car",
 "language": "GDScript",
-"path": "res://car.gd"
+"path": "res://scenes/car.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "Effect",
@@ -27,7 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="RaceAgainstTime"
-run/main_scene="res://level1.tscn"
+run/main_scene="res://scenes/MainMenu.tscn"
 config/icon="res://icon.png"
 
 [input]
