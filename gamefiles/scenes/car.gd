@@ -48,8 +48,6 @@ func _on_boost_stopped():
 
 func _on_speed_change():
 	speed_multiplier = root.speed_multiplier
-	print("Car speed changed!")
-	print(speed_multiplier)
 
 
 # Picks a random lane (co-ordinates) out of 5 for the car to spawn on
